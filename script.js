@@ -3,13 +3,13 @@ const quizData = [
     { question: 'Is the sky blue?', answer: true },
     { question: 'Is the earth flat?', answer: false },
     { question: 'Do birds fly?', answer: true },
-    { question: "A slug's blood is green.", answer: true},
-    { question: "The loudest animal is the African Elephant.", answer: false},
-    { question: "Approximately one quarter of human bones are in the feet.", answer: true},
-    { question: "The total surface area of a human lungs is the size of a football pitch.", answer: true},+
-    { question: "You can lead a cow down stairs but not up stairs.", answer: false},
-    { question: "No piece of square dry paper can be folded in half more than 7 times.", answer: false},
-    { question: "A few ounces of chocolate can to kill a small dog.", answer: true}
+    { question: "A slug's blood is green.", answer: true },
+    { question: "The loudest animal is the African Elephant.", answer: false },
+    { question: "Approximately one quarter of human bones are in the feet.", answer: true },
+    { question: "The total surface area of a human lungs is the size of a football pitch.", answer: true },
+    { question: "You can lead a cow down stairs but not up stairs.", answer: false },
+    { question: "No piece of square dry paper can be folded in half more than 7 times.", answer: false },
+    { question: "A few ounces of chocolate can to kill a small dog.", answer: true }
     // Add more questions as needed
 ];
 
