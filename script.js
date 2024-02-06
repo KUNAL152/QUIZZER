@@ -9,10 +9,9 @@ const quizData = [
     { question: "The total surface area of a human lungs is the size of a football pitch.", answer: true },
     { question: "You can lead a cow down stairs but not up stairs.", answer: false },
     { question: "No piece of square dry paper can be folded in half more than 7 times.", answer: false },
-    { question: "A few ounces of chocolate can to kill a small dog.", answer: true }
+    { question: "A few ounces of chocolate can to kill a small dog.", answer: true },
     // Add more questions as needed
 ];
-
 // DOM elements
 const startButton = document.getElementById('start-btn');
 const quizContainer = document.getElementById('quiz');
@@ -20,23 +19,18 @@ const questionElement = document.getElementById('question');
 const scoreElement = document.getElementById('score');
 const scoreValueElement = document.getElementById('score-value');
 const restartButton = document.getElementById('restart-btn');
-
 let currentQuestionIndex = 0;
 let score = 0;
-
 // Event listener for start button
 startButton.addEventListener('click', startQuiz);
-
 // Event listener for restart button
 restartButton.addEventListener('click', restartQuiz);
-
 // Function to start the quiz
 function startQuiz() {
     startButton.classList.add('hidden');
     quizContainer.classList.remove('hidden');
     nextQuestion();
 }
-
 // Function to display the next question
 function nextQuestion() {
     if (currentQuestionIndex < quizData.length) {
@@ -46,7 +40,6 @@ function nextQuestion() {
         showFinalScore();
     }
 }
-
 // Function to check the user's answer
 function checkAnswer(userAnswer) {
     const currentQuestion = quizData[currentQuestionIndex];
@@ -58,7 +51,6 @@ function checkAnswer(userAnswer) {
     currentQuestionIndex++;
     nextQuestion();
 }
-
 // Function to show the final score
 function showFinalScore() {
     quizContainer.classList.add('hidden');
@@ -66,7 +58,6 @@ function showFinalScore() {
     scoreValueElement.innerText = score;
     restartButton.classList.remove('hidden');
 }
-
 // Function to restart the quiz
 function restartQuiz() {
     startButton.classList.remove('hidden');

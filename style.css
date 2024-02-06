@@ -10,16 +10,16 @@ body {
 .quiz-container {
     max-width: 65%; /* Set to a percentage value */
     margin: 100px auto;
-    background-color: blue; /* Change to your desired background color */
+    background-color: #00b4d8; /* Change to your desired background color */
     padding: 20px;
     border-radius: 30px;
-    border: 35px solid black; /* Change to your desired border color */
+    border: 35px solid #f4f1de; /* Change to your desired border color */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
 }
 
 @media (min-width: 1000px) {
     .quiz-container {
-        max-width: 600px; /* Set the maximum width */
+        max-width: 500px; /* Set the maximum width */
     }
 }
 .question-card {
@@ -54,8 +54,8 @@ button {
 }
 
 button:hover {
-    background-color: slategray;
-    color: white;
+    background-color: #06d6a0;
+    color: #03045e;
 }
 
 .options {
@@ -64,19 +64,20 @@ button:hover {
 }
 
 .hidden {
-    font-size: 24px;
     color: black;
     display: none;
 }
 
 h1 {
-    font-size:  40px;
+    font-size:  50px;
+    font-weight: bolder;
     text-align: center;
-    color:black;    
+    color: #000;    
 }
 
 #score {
     margin-top: 20px;
-    font-size: 18px;
-    color: #333;
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
 }
